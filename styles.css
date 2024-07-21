@@ -1,9 +1,11 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
 }
 
 .container {
@@ -14,13 +16,16 @@ body {
 
 .about-section {
     padding: 50px 0;
-    background-color: #f4f4f4;
 }
 
 .about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .about-image {
@@ -33,16 +38,20 @@ body {
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
     flex: 2;
     text-align: left;
+    padding: 20px;
 }
 
 .about-text h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #ff7e5f;
 }
 
 .about-text h2 {
@@ -65,15 +74,16 @@ body {
 }
 
 .projects-button {
-    background-color: #000;
+    background-color: #ff7e5f;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    margin-bottom: 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
 }
 
 .projects-button:hover {
-    background-color: #555;
+    background-color: #feb47b;
 }
